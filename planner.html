@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner - FitTrack</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FitTrack</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="planner.html" class="active">Workout Planner</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </header>
+
+        <main class="planner">
+            <div class="planner-grid">
+                <div class="planner-card">
+                    <h3>Create Workout Plan</h3>
+                    <form id="workoutPlanForm" class="workout-form">
+                        <div class="form-group">
+                            <label for="planName">Plan Name</label>
+                            <input type="text" id="planName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="workoutType">Workout Type</label>
+                            <select id="workoutType" required>
+                                <option value="strength">Strength Training</option>
+                                <option value="cardio">Cardio</option>
+                                <option value="flexibility">Flexibility</option>
+                                <option value="hiit">HIIT</option>
+                            </select>
+                        </div>
+                        <div id="exerciseList">
+                            <!-- Exercise inputs will be added here -->
+                        </div>
+                        <button type="button" class="btn secondary" id="addExercise">Add Exercise</button>
+                        <button type="submit" class="btn primary">Save Plan</button>
+                    </form>
+                </div>
+
+                <div class="planner-card">
+                    <h3>My Workout Plans</h3>
+                    <div class="workout-plans" id="savedPlans">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="planner-card">
+                    <h3>Weekly Schedule</h3>
+                    <div class="weekly-schedule" id="weeklySchedule">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/planner.js"></script>
+</body>
+</html>
