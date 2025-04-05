@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #4CAF50;
+    --primary-color: #616abb;
     --secondary-color: #2196F3;
     --text-color: #333;
     --bg-color: #f5f5f5;
@@ -85,7 +85,7 @@ nav a:hover {
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
-/* Features Section */
+
 .features {
     padding: 5rem 0;
     background: var(--white);
@@ -133,7 +133,7 @@ nav a:hover {
 { width: 70%;
     object-fit: contain;
 }
-/* Dashboard Styles */
+
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -176,7 +176,8 @@ nav a:hover {
     margin-top: 0.5rem;
 }
 
-/* Planner Styles */
+
+
 .planner-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -208,7 +209,7 @@ nav a:hover {
     border-radius: var(--border-radius);
 }
 
-/* Profile Styles */
+
 .profile-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -222,7 +223,6 @@ nav a:hover {
     box-shadow: var(--shadow);
 }
 
-/* Forms */
 .form-group {
     margin-bottom: 1rem;
 }
@@ -242,7 +242,15 @@ nav a:hover {
     font-size: 1rem;
 }
 
-/* Buttons */
+.form-group input[type="checkbox"] {
+    width: auto;
+    display:inline-block;
+}
+
+.form-group p{
+     font-weight: 500;
+}
+
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -270,7 +278,7 @@ nav a:hover {
     opacity: 0.9;
 }
 
-/* Modal */
+
 .modal {
     position: fixed;
     top: 0;
@@ -296,13 +304,14 @@ nav a:hover {
     display: none;
 }
 
-/* Charts */
+
 canvas {
     width: 100% !important;
     height: 300px !important;
 }
 
-/* Weekly Schedule */
+
+
 .weekly-schedule {
     display: grid;
     gap: 1rem;
@@ -325,14 +334,15 @@ canvas {
     margin-top: 0.5rem;
 }
 
-/* Dark Theme */
+
 body.dark {
     --bg-color: #1a1a1a;
     --text-color: #ffffff;
     --white: #2d2d2d;
 }
 
-/* Responsive Design */
+
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
